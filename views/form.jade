@@ -1,0 +1,10 @@
+extends layout 
+
+block content
+    h1 Submit
+    form(method="POST" action="/new")
+        h3 Name 
+        input(type="text" name="Name") 
+        h3 Message
+        input(type="text" name="Message")
+        input(type="submit", value="Submit")

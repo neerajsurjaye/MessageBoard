@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  each obj in messages
+    div #{obj.user}
+    div #{obj.text}
+    div #{obj.added}
+    br
+
+  a(href="/new") Add new message
